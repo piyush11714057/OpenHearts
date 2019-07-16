@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <!-- these thing down in menu is just for preview not necessory
+    if changes not visible go to rebuild project
+    -->
+<!--
+Now go to Values ->style.xml
+    and edit code to get noActionBar as ive done
+-->
+    <group android:checkableBehavior="single"> <!-- TO MAke sure only one item can be selected in group -->
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/Account"
+            android:icon="@drawable/ic_account"
+            android:title="My Account" />
+        <item
+            android:id="@+id/helped_people"
+            android:icon="@drawable/ic_face"
+            android:title="Videos of people you've helped" />
+        <item
+            android:id="@+id/choose_lang"
+            android:icon="@drawable/ic_language"
+            android:title="Choose your language" />
+
+
+    </group>
+    <!--
+ The thing in group is like we select any 1 and it reamins selected
+ But below we are creating an item which itself has a menu
+ and items where there is no group
+ means item does its work but doesnt remain selected :)
+    -->
+    <item android:title="Help us">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="share" />
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/likeus"
+                android:icon="@drawable/ic_person"
+                android:title="Like us on social media" />
+            </group>
+        </menu>
+
+
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="About us" />
+            </group>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+</menu>

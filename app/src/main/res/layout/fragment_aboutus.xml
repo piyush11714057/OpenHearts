@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#045672"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Welcome
+to open hearts, This app is developed by 2 friends,
+As they wanted to help more people to do charity,Every Sunday we personally go to the
+places and donate the amount making a video as proof , as we care for betterment of society
+if the amount is very low.. we wait till we collect some huge amount
+and then we give it to donations where you selected
+Also, we send videos to the personalised ones who have donated the amount for the category
+we will write your name and amount in the database and save it.., so with trust
+just open the hearts for little kids at orphanage and for those Old people
+whose son/daughters dont care for them .. or dont give love to them..
+we want to be their kids and love them... and proving that world is not a bad place to live..
+thank you sir/ma'am.."
+
+    android:textSize="30sp"
+
+    android:layout_centerInParent="true"/>
+    </ScrollView>
+</RelativeLayout>
